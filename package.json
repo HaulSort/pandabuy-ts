@@ -1,0 +1,27 @@
+{
+  "name": "pandabuy-ts",
+  "version": "1.0.0",
+  "description": "A lightweight TypeScript module to pass a Taobao, 1688 or Tmall product URL and get back a JSON object with the product's details.",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "scripts": {
+    "build": "bun build --target=node ./index.ts --outfile=dist/index.js && bun run build:declaration",
+    "build:declaration": "tsc --project tsconfig.types.json"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "alistair": "^1.5.5",
+    "axios": "^1.6.2",
+    "rand-user-agent": "^2.0.42"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haulsort/pandabuy-ts.git"
+  },
+  "author": "Jack LaFond"
+}
